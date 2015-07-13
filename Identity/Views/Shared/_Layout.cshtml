@@ -29,7 +29,22 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="pagination">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="active">@Html.ActionLink("About", "About", "Home")</li">
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+        </div>
+
+
         @RenderBody()
         <hr />
         <footer>
